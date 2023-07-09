@@ -9,6 +9,12 @@
       </h4>
       <p class="card-text"><%= event.content %></p>
       <hr />
+      <% if event.only_woman %>
+        <i class="bi bi-heart-fill text-danger"></i>
+        <span class="text-danger">女性限定</span>
+        <i class="bi bi-heart-fill text-danger"></i>
+      <% end %>
+      <hr />
       <div class="d-flex justify-content-between">
         <div>
           <i class="bi bi-geo-alt"></i>
